@@ -1,0 +1,821 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #1B1B1B;
+    line-height: normal;
+    font-family: 'proxima-nova', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/**
+* header css strat
+*/
+header {
+    background-color: #222428;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+
+.header-cont {
+    display: flex;
+    color: white;
+    flex-direction: row;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header a {
+    display: inline-block;
+}
+
+.logo svg {
+    width: 100px;
+    height: 26px;
+    margin-top: 8px;
+}
+
+.h1,
+.logo,
+.search-input {
+    margin-right: 27px;
+}
+
+.h1 .svg_color {
+    fill: hsla(0, 0%, 100%, .8);
+}
+
+.search-input {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 500px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 0 10px;
+    flex: 1;
+    box-sizing: border-box;
+    color: #8e8e93;
+    font-size: 12px;
+    background-color: #1b1b1b;
+    border: 1px solid hsla(0, 0%, 100%, .1);
+}
+
+.search-input svg {
+    margin: 0 4px;
+}
+
+.search-input .svg_color {
+    fill: #8e8e93;
+
+}
+
+.search-input input {
+    background-color: transparent;
+    border: none;
+    height: 38px;
+    outline: none;
+    color: white;
+
+}
+
+.header-btn {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    line-height: 10px;
+    border: 1px solid white;
+    padding: 9px 20px 7px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.login-cta {
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, .75);
+
+}
+
+/**
+* header css end
+*/
+
+
+
+/**
+* navigation header css strat
+*/
+.Navigation-menu {
+    position: sticky;
+    top: 60px;
+    min-height: 60px;
+    z-index: 200;
+    background-color: #1B1B1B;
+}
+
+.nav-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.nav-link {
+    color: hsla(0, 0%, 100%, .9);
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 20px;
+    margin-right: 30px;
+    letter-spacing: -.09;
+    cursor: pointer;
+    text-align: left;
+    vertical-align: baseline;
+    text-transform: capitalize;
+}
+
+.nav-link:hover {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(212, 6, 6);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
+    text-underline-position: under;
+    transition: all .2s;
+}
+
+.av-link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: all .2s;
+}
+
+.nav-link1 {
+    color: hsla(0, 0%, 100%, .9);
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 30px;
+    letter-spacing: -.09;
+    text-transform: capitalize;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(212, 6, 6);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+/**
+*  navigatio header css end
+*/
+
+
+
+/**
+* 2 colums layout css start
+*/
+.two-col-layout {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.music-libs {
+    flex: 7;
+    max-width: calc(100% - 90px);
+    padding: 0 45px;
+    margin: 0 auto 100px;
+    max-width: 70%;
+}
+
+.ad-cont {
+    flex: 2;
+    max-width: 30%;
+    background-color: #1E1E1E;
+}
+
+/**
+* 2 colums layout css end
+*/
+
+
+
+/**
+* slider css start
+*/
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 850px;
+    vertical-align: baseline;
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 3px;
+
+
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    margin-right: 25px;
+
+}
+
+/* Next & previous buttons */
+.prev2,
+.next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -40px;
+    padding: 16px;
+    color: white;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: transparent;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+    right: 35px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover,
+.next2:hover {
+    background-color: transparent;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/**
+* slider css end
+*/
+
+
+
+/**
+* song section css start
+*/
+
+.songs-sections {
+    margin: 50px 0;
+}
+
+.section-heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: hsla(0, 0%, 100%, .9);
+    text-transform: capitalize;
+    font-family: proximanova-bold-webfont, Arial, sans-serif;
+}
+
+
+.songs-cont {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.song-card {
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+}
+
+.song-name {
+    color: hsla(0, 0%, 100%, .9);
+    margin-top: 6px;
+    font-size: 16px;
+}
+
+.song-card:hover .overlay {
+    visibility: visible;
+    transition: 10s;
+}
+
+.song-card:hover .img-cont {
+    filter: brightness(0.75);
+    transition: all .4s;
+}
+
+.img-cont {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .3);
+    cursor: pointer;
+    background-image: url(https://a10.gaanacdn.com/gn_img/images/play_1621599900.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: calc(50% + 1px) 50%;
+}
+
+/**
+*  song section css end
+*/
+
+
+
+/**
+* Music player css start
+*/
+.music-player {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #222428;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .5);
+    padding: 15px 25px;
+    border-radius: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.current-music-playing {
+    align-items: center;
+    flex: 2;
+}
+
+.song-cover {
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.t_over {
+    font-size: 15px;
+    color: white;
+}
+
+.t_over2 {
+    font-size: 12px;
+    margin-top: 4px;
+    color: rgb(255, 255, 255, .7);
+}
+
+.song-info {
+    flex-direction: column;
+    max-width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.music-controls {
+    align-items: center;
+    flex: 3;
+    padding-left: 90px;
+}
+
+.time {
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255, .8);
+    color: rgb(255, 255, 255, .8);
+    font-size: 11px;
+    padding: 6px 16px;
+}
+
+.music-controls button,
+.music-quality button {
+    margin: 0 12px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.music-controls .svg_color,
+.music-quality .svg_color {
+    fill: white;
+}
+
+.botón {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.fondo {
+    background: #fc0606;
+    border-radius: 50%;
+    box-shadow: 0 1px 2.2px rgba(0, 0, 0, 0.051),
+        0 2.3px 5.3px rgba(0, 0, 0, 0.059), 0 4.4px 10px rgba(0, 0, 0, 0.06),
+        0 7.8px 17.9px rgba(0, 0, 0, 0.059), 0 14.6px 33.4px rgba(0, 0, 0, 0.059),
+        0 35px 80px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    height: 35px;
+    position: absolute;
+    width: 35px;
+}
+
+.botón:active .fondo {
+    background: #fc0606;
+}
+
+.icono {
+    transform: rotate(-120deg);
+    transition: transform 500ms;
+    width: 50px;
+}
+
+.parte {
+    background: white;
+    height: 85px;
+    position: absolute;
+    width: 85px;
+    margin: -43px -23px;
+}
+
+.izquierda {
+    clip-path: polygon(43.77666% 55.85251%,
+            43.77874% 55.46331%,
+            43.7795% 55.09177%,
+            43.77934% 54.74844%,
+            43.77855% 54.44389%,
+            43.77741% 54.18863%,
+            43.77625% 53.99325%,
+            43.77533% 53.86828%,
+            43.77495% 53.82429%,
+            43.77518% 53.55329%,
+            43.7754% 53.2823%,
+            43.77563% 53.01131%,
+            43.77585% 52.74031%,
+            43.77608% 52.46932%,
+            43.7763% 52.19832%,
+            43.77653% 51.92733%,
+            43.77675% 51.65633%,
+            43.77653% 51.38533%,
+            43.7763% 51.11434%,
+            43.77608% 50.84334%,
+            43.77585% 50.57235%,
+            43.77563% 50.30136%,
+            43.7754% 50.03036%,
+            43.77518% 49.75936%,
+            43.77495% 49.48837%,
+            44.48391% 49.4885%,
+            45.19287% 49.48865%,
+            45.90183% 49.48878%,
+            46.61079% 49.48892%,
+            47.31975% 49.48906%,
+            48.0287% 49.4892%,
+            48.73766% 49.48934%,
+            49.44662% 49.48948%,
+            50.72252% 49.48934%,
+            51.99842% 49.4892%,
+            53.27432% 49.48906%,
+            54.55022% 49.48892%,
+            55.82611% 49.48878%,
+            57.10201% 49.48865%,
+            58.3779% 49.4885%,
+            59.6538% 49.48837%,
+            59.57598% 49.89151%,
+            59.31883% 50.28598%,
+            58.84686% 50.70884%,
+            58.12456% 51.19714%,
+            57.11643% 51.78793%,
+            55.78697% 52.51828%,
+            54.10066% 53.42522%,
+            52.02202% 54.54581%,
+            49.96525% 55.66916%,
+            48.3319% 56.57212%,
+            47.06745% 57.27347%,
+            46.11739% 57.79191%,
+            45.42719% 58.14619%,
+            44.94235% 58.35507%,
+            44.60834% 58.43725%,
+            44.37066% 58.41149%,
+            44.15383% 58.27711%,
+            43.99617% 58.0603%,
+            43.88847% 57.77578%,
+            43.82151% 57.43825%,
+            43.78608% 57.06245%,
+            43.77304% 56.66309%,
+            43.773% 56.25486%);
+    transition: clip-path 500ms;
+}
+
+.active {
+    color: #222428;
+    background-color: #222428;
+}
+
+.derecha {
+    clip-path: polygon(43.77666% 43.83035%,
+            43.77874% 44.21955%,
+            43.7795% 44.59109%,
+            43.77934% 44.93442%,
+            43.77855% 45.23898%,
+            43.77741% 45.49423%,
+            43.77625% 45.68961%,
+            43.77533% 45.81458%,
+            43.77495% 45.85858%,
+            43.77518% 46.12957%,
+            43.7754% 46.40056%,
+            43.77563% 46.67156%,
+            43.77585% 46.94255%,
+            43.77608% 47.21355%,
+            43.7763% 47.48454%,
+            43.77653% 47.75554%,
+            43.77675% 48.02654%,
+            43.77653% 48.29753%,
+            43.7763% 48.56852%,
+            43.77608% 48.83952%,
+            43.77585% 49.11051%,
+            43.77563% 49.38151%,
+            43.7754% 49.65251%,
+            43.77518% 49.9235%,
+            43.77495% 50.1945%,
+            44.48391% 50.19436%,
+            45.19287% 50.19422%,
+            45.90183% 50.19408%,
+            46.61079% 50.19394%,
+            47.31975% 50.1938%,
+            48.0287% 50.19366%,
+            48.73766% 50.19353%,
+            49.44662% 50.19338%,
+            50.72252% 50.19353%,
+            51.99842% 50.19366%,
+            53.27432% 50.1938%,
+            54.55022% 50.19394%,
+            55.82611% 50.19408%,
+            57.10201% 50.19422%,
+            58.3779% 50.19436%,
+            59.6538% 50.1945%,
+            59.57598% 49.79136%,
+            59.31883% 49.39688%,
+            58.84686% 48.97402%,
+            58.12456% 48.48572%,
+            57.11643% 47.89493%,
+            55.78697% 47.16458%,
+            54.10066% 46.25764%,
+            52.02202% 45.13705%,
+            49.96525% 44.01371%,
+            48.3319% 43.11074%,
+            47.06745% 42.4094%,
+            46.11739% 41.89096%,
+            45.42719% 41.53667%,
+            44.94235% 41.3278%,
+            44.60834% 41.24561%,
+            44.37066% 41.27137%,
+            44.15383% 41.40575%,
+            43.99617% 41.62256%,
+            43.88847% 41.90709%,
+            43.82151% 42.24461%,
+            43.78608% 42.62041%,
+            43.77304% 43.01978%,
+            43.773% 43.428%);
+    transition: clip-path 500ms;
+}
+
+
+
+.active .icono {
+    transform: rotate(-90deg);
+}
+
+.active .izquierda {
+    clip-path: polygon(56.42249% 57.01763%,
+            54.93283% 57.0175%,
+            53.00511% 57.01738%,
+            50.83554% 57.01727%,
+            48.62036% 57.01718%,
+            46.55585% 57.01709%,
+            44.83822% 57.01702%,
+            43.66373% 57.01698%,
+            43.22863% 57.01696%,
+            42.86372% 57.01904%,
+            42.56988% 57.01621%,
+            42.3402% 56.99486%,
+            42.16778% 56.94152%,
+            42.0457% 56.84267%,
+            41.96705% 56.68478%,
+            41.92493% 56.45432%,
+            41.91246% 56.13777%,
+            41.91258% 55.76282%,
+            41.9129% 55.37058%,
+            41.91335% 54.96757%,
+            41.91387% 54.56032%,
+            41.91439% 54.15537%,
+            41.91485% 53.75926%,
+            41.91517% 53.3785%,
+            41.91529% 53.01965%,
+            41.94275% 52.72355%,
+            42.02117% 52.51653%,
+            42.14465% 52.38328%,
+            42.30727% 52.30854%,
+            42.50308% 52.27699%,
+            42.72619% 52.27341%,
+            42.97065% 52.28248%,
+            43.23056% 52.2889%,
+            43.94949% 52.28896%,
+            45.45083% 52.28912%,
+            47.47445% 52.28932%,
+            49.76027% 52.28957%,
+            52.04818% 52.28981%,
+            54.07805% 52.29003%,
+            55.5898% 52.29019%,
+            56.32332% 52.29024%,
+            56.58221% 52.28816%,
+            56.83726% 52.28948%,
+            57.07897% 52.30593%,
+            57.29794% 52.34898%,
+            57.48468% 52.43029%,
+            57.62978% 52.56146%,
+            57.72375% 52.7541%,
+            57.75718% 53.01981%,
+            57.75713% 53.37763%,
+            57.75699% 53.81831%,
+            57.75679% 54.31106%,
+            57.75657% 54.82507%,
+            57.75635% 55.32958%,
+            57.75615% 55.79377%,
+            57.75601% 56.18684%,
+            57.75596% 56.47801%,
+            57.7549% 56.50122%,
+            57.74034% 56.5624%,
+            57.6955% 56.64887%,
+            57.60334% 56.748%,
+            57.44691% 56.84712%,
+            57.20925% 56.93358%,
+            56.87342% 56.99471%);
+}
+
+.active .derecha {
+    clip-path: polygon(56.42249% 42.44625%,
+            54.93283% 42.44637%,
+            53.00511% 42.44649%,
+            50.83554% 42.4466%,
+            48.62036% 42.4467%,
+            46.55585% 42.44679%,
+            44.83822% 42.44685%,
+            43.66373% 42.4469%,
+            43.22863% 42.44691%,
+            42.86372% 42.44483%,
+            42.56988% 42.44767%,
+            42.3402% 42.46902%,
+            42.16778% 42.52235%,
+            42.0457% 42.6212%,
+            41.96705% 42.77909%,
+            41.92493% 43.00956%,
+            41.91246% 43.32611%,
+            41.91258% 43.70105%,
+            41.9129% 44.0933%,
+            41.91335% 44.49631%,
+            41.91387% 44.90355%,
+            41.91439% 45.3085%,
+            41.91485% 45.70462%,
+            41.91517% 46.08537%,
+            41.91529% 46.44422%,
+            41.94275% 46.74032%,
+            42.02117% 46.94735%,
+            42.14465% 47.0806%,
+            42.30727% 47.15534%,
+            42.50308% 47.18688%,
+            42.72619% 47.19047%,
+            42.97065% 47.1814%,
+            43.23056% 47.17497%,
+            43.94949% 47.17491%,
+            45.45083% 47.17476%,
+            47.47445% 47.17455%,
+            49.76027% 47.1743%,
+            52.04818% 47.17406%,
+            54.07805% 47.17384%,
+            55.5898% 47.17369%,
+            56.32332% 47.17363%,
+            56.58221% 47.17571%,
+            56.83726% 47.17439%,
+            57.07897% 47.15795%,
+            57.29794% 47.1149%,
+            57.48468% 47.03359%,
+            57.62978% 46.90242%,
+            57.72375% 46.70977%,
+            57.75718% 46.44406%,
+            57.75713% 46.08625%,
+            57.75699% 45.64557%,
+            57.75679% 45.15282%,
+            57.75657% 44.6388%,
+            57.75635% 44.1343%,
+            57.75615% 43.6701%,
+            57.75601% 43.27703%,
+            57.75596% 42.98586%,
+            57.7549% 42.96265%,
+            57.74034% 42.90148%,
+            57.6955% 42.815%,
+            57.60334% 42.71587%,
+            57.44691% 42.61675%,
+            57.20925% 42.53029%,
+            56.87342% 42.46916%);
+}
+
+.next svg {
+    transform: rotateY(180deg);
+}
+
+.music-quality {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+/**
+* Music player css end
+*/
